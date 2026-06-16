@@ -2,7 +2,7 @@ class Porthole < Formula
   desc "Local web console for Apple's container runtime (macOS, Apple silicon)"
   homepage "https://github.com/dariusvorster/porthole"
   url "https://github.com/dariusvorster/porthole/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "fe1200366307bdb8e4489a4cbd7e36d6be1469a8cea863fc4596dcd4f3189fd2"
+  sha256 "1e3593ef723a7d02e4f1249e438220854200dec43b7c791c7e2d549251ea26cf"
   license "MIT"
 
   depends_on "go" => :build
