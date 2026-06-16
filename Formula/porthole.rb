@@ -27,6 +27,18 @@ class Porthole < Formula
     error_log_path var/"log/porthole/portholed.log"
   end
 
+  def caveats
+    <<~EOS
+      To start Porthole now and at login:
+        brew services start porthole
+
+      Then open http://127.0.0.1:9191
+
+      After upgrading Porthole, restart the service to load the new version:
+        brew services restart porthole
+    EOS
+  end
+
   test do
     assert_match "porthole", shell_output("#{bin}/portholed -version")
   end
